@@ -11,7 +11,7 @@ function keyListener(e) {
   if(space && !controlKeys) {
     // Make sure we're not trying to delete text
     var tag = e.target.tagName.toLowerCase();
-    if (tag != 'input' && tag != 'textarea') {
+    if (tag != 'input' && tag != 'textarea' && != 'span') {
       window.history.back();
     }
   }
