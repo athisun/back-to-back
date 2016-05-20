@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  
+  "name": "Back To Back",
+  "short_name": "Back 2 Back",
+  "version": "0.0.1",
+  "description": "Restore the backspace keyboard shortcut",
+  "author": "Andrew C",
+  
+  "icons": {
+    "16": "ico/16.png",
+    "48": "ico/48.png",
+    "128": "ico/128.png"
+  },
+  
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["listener.js"]
+  }]
+  
+}
